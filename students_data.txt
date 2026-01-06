@@ -1,0 +1,16 @@
+=== Student Record ===
+Name: Muhammad Fuzail
+Roll Number: BSE-23S-211
+Email: muhammadfuzail591@gmail.com
+Course: Information Technology
+Registered On: 2026-01-06 10:29:28
+==================================================
+
+=== Student Record ===
+Name: Ali
+Roll Number: 12345
+Email: muhammadali@gmail.com
+Course: Information Technology
+Registered On: 2026-01-06 10:41:27
+==================================================
+

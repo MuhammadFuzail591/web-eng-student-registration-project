@@ -14,3 +14,19 @@ Course: Information Technology
 Registered On: 2026-01-06 10:41:27
 ==================================================
 
+=== Student Record ===
+Name: hasan
+Roll Number: aldk
+Email: hasan123@gmail.com
+Course: Computer Science
+Registered On: 2026-01-06 11:04:20
+==================================================
+
+=== Student Record ===
+Name: Ali
+Roll Number: 321
+Email: alihasan@gmail.com
+Course: Computer Science
+Registered On: 2026-01-06 11:16:01
+==================================================
+

@@ -5,76 +5,76 @@
 }
 
 body {
-  font-family: Inter, system-ui, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
-}
-
-.layout {
   display: flex;
-  min-height: 100vh;
-}
-
-.left-panel,
-.right-panel {
-  width: 50%;
-  padding: 60px;
-}
-
-.left-panel {
-  background: #ffffff;
-}
-
-.right-panel {
-  background: #0f172a;
-  color: #e5e7eb;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 8px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
 }
 
 .subtitle {
-  color: #6b7280;
+  text-align: center;
+  color: #666;
   margin-bottom: 30px;
+  font-size: 14px;
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  color: #555;
   font-weight: 600;
+  font-size: 14px;
 }
 
 input,
 select {
   width: 100%;
-  padding: 12px;
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
   border-radius: 8px;
-  border: 2px solid #e5e7eb;
   font-size: 15px;
+  transition: all 0.3s ease;
+  font-family: inherit;
 }
 
 input:focus,
 select:focus {
   outline: none;
   border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .error {
-  border-color: #ef4444;
+  border-color: #e74c3c !important;
 }
 
 .error-message {
+  color: #e74c3c;
   font-size: 12px;
-  color: #ef4444;
+  margin-top: 5px;
   display: none;
 }
 
@@ -82,62 +82,103 @@ select:focus {
   display: block;
 }
 
-button {
+.submit-btn {
   width: 100%;
   padding: 14px;
-  background: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px;
 }
 
-button:disabled {
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn:disabled {
   opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.alert {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: none;
+  animation: slideDown 0.3s ease;
+}
+
+.alert.show {
+  display: block;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.required {
+  color: #e74c3c;
+}
+
+.view-data-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-data-btn:hover {
+  background: #667eea;
+  color: white;
 }
 
 .loading {
-  margin-top: 10px;
+  text-align: center;
   color: #667eea;
+  font-size: 14px;
+  margin-top: 10px;
   display: none;
 }
 
 .loading.show {
   display: block;
-}
-
-.view-link {
-  display: block;
-  margin-top: 20px;
-  text-align: center;
-  color: #667eea;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
-}
-
-.info p {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.github {
-  margin-top: 40px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.github svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
 }
